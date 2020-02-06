@@ -176,7 +176,23 @@
 
     </footer>
     <!-- Footer -->
+    
+    
+    <script>
+        
+window.onscroll= function(){
+    ocultarWhatsapp=document.querySelector('.btn-whatsapp');
 
+    if ((window.innerHeight + window.pageYOffset) >= this.document.body.offsetHeight){
+      
+        ocultarWhatsapp.style.display="none";
+
+    }else{
+        ocultarWhatsapp.style.display="block";
+    }    
+}
+    
+    </script>
     <!-- JQuery -->
     <script src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="assets/js/jquery-3.4.0.min.js"></script>
